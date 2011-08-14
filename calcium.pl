@@ -2,16 +2,22 @@ use strict;
 use warnings;
 use FindBin;
 use File::Path;
+use Cwd;
 
 my $scriptLocation = $FindBin::Bin;
-my $guideFileLocation = $ARGV[0] or die "No guide file specified.";
-my $guideFile = fileToString($guideFileLocation);
+my $guideFileLocation = ($ARGV[0] or getcwd()).'/vitamind';
+(-e $guideFileLocation) ? my $guideFile = fileToString($guideFileLocation) : stopGoing("No vitamind found.");
 
 sub fileToString {
   open (my $fileHandle, $_[0]);
   my $file = join("", <$fileHandle>);
   close $fileHandle;
   return $file;
+}
+
+sub stopGoing {
+  print "$_[0]\n";
+  exit;
 }
 
 sub parseCommand {
@@ -25,7 +31,7 @@ sub parseCommand {
     compileCommand();
   }
   else {
-    die "Invalid command found in guide file \"$guideFileLocation\"";
+    stopGoing("Invalid command found in guide file \"$guideFileLocation\".");
   }
 }
 

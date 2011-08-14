@@ -1,12 +1,16 @@
 use strict;
 use warnings;
 use FindBin;
+use lib $FindBin::Bin . '/modules/';
+use caldoc;
 use File::Path;
 use Cwd;
 
 my $scriptLocation = $FindBin::Bin;
-my $guideFileLocation = ($ARGV[0] or getcwd()).'/vitamind';
+my $guideFileDirectory = ($ARGV[0] or getcwd());
+my $guideFileLocation = $guideFileDirectory.'/vitamind';
 (-e $guideFileLocation) ? my $guideFile = fileToString($guideFileLocation) : stopGoing("No vitamind found.");
+my $documents;
 
 sub fileToString {
   open (my $fileHandle, $_[0]);
@@ -44,7 +48,7 @@ sub dirCommand {
 }
 
 sub loadCommand {
-
+  $documents->{$_[0]} = caldoc->new($guideFileDirectory.$_[0]);
 }
 
 foreach my $current_line (split(/[\r\n]+/,$guideFile)) {

@@ -4,3 +4,4 @@ load gambciv-globalheader.cal
 load gambciv-sidebar.cal
 load gambciv-closing.cal
 load gambciv-index.cal
+compile

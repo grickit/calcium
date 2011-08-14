@@ -1,0 +1,39 @@
+<cal location="gambciv/downloads.html">
+<cal title="GambCiv">
+
+<cal include="gambciv-opening">
+<cal include="gambciv-globalheader">
+
+  <div id="header" class="container">GambCiv</div>
+  <div id="main">
+    <div class="subtitlebar">Downloads</div>
+    <p>You can install GambCiv via the addon interface inside the game.</p>
+    <p>Or you can use one of these download links. Download the archive, and extract it into your <a href="http://wiki.wesnoth.org/EditingWesnoth#Where_is_my_user_data_directory.3F">userdata folder</a>.</p>
+
+    <p>Latest stable version - 0.1 (pre-alpha)
+      <ul>
+	<li><a href="http://files.wesnoth.org/addons/1.9/GambCiv.tar.bz2">Wesnoth.org</a> (&lt;1mb) (.tar.bz2)</li>
+	<li><a href="https://github.com/grickit/GambCiv/zipball/0.1">Github.com</a> (&lt;1mb) (.zip)</li>
+      </ul>
+    </p>
+
+    <p>Bleeding edge version*
+      <ul>
+	<li><a href="https://github.com/grickit/GambCiv/zipball/master">Github.com</a> (&lt;1mb) (.zip)</li>
+	<li><a href="https://github.com/grickit/GambCiv/tarball/master">Github.com</a> (&lt;1mb) (.tar.gz)</li>
+      </ul>
+    *The bleeding edge version contains all of the new changes. It may have numerous bugs. It also changes frequently and will not be compatible with other versions for online play.
+    </p>
+
+    <div class="subtitlebar">Clone with git</div>
+      <p>You can get GambCiv via git as well. Just link the repo right into your userdata folder. All the restrictions of the bleeding edge version still apply.<p>
+      <p>Linux instructions:
+	<div class="command">
+	  $ git clone git://github.com/grickit/GambCiv.git<br>
+	  $ ln -s GambCiv/ ~/.local/share/wesnoth/1.9/data/add-ons/GambCiv
+	</div>
+      </p>
+  </div>
+
+<cal include="gambciv-sidebar">
+<cal include="gambciv-closing">

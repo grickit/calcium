@@ -107,7 +107,9 @@ sub compileCommand {
   while (my ($key, $value) = each %{$documents}) {
     if ($documents->{$key}->{'location'}) {
       $documents->{$key} = pageCompile($value);
-      print $documents->{$key}->{'Contents'};
+      open(my $compiledPage,"> $documents->{$key}->{'location'}");
+      print $compiledPage "$documents->{$key}->{'Contents'}";
+      close $compiledPage;
     }
   }
 }

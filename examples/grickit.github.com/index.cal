@@ -1,0 +1,38 @@
+<cal id="gambciv-index">
+<cal location="gambciv/index.html">
+<cal title="GambCiv">
+
+<cal include="opening">
+<cal include="global_header">
+      <div id="header" class="container">GambCiv</div>
+      <div id="main">
+	<div class="subtitlebar">About</div>
+	<p>GambCiv is a Civilization-like addon for the open source strategy game: <a href="http://wesnoth.org">Battle for Wesnoth</a>.</p>
+	<p>It adds many popular strategy game features that are missing from Wesnoth. Besides just gold, you now have to manage food and building material. You are able to construct buildings, destroy enemy fortifications, farm, harvest natural resources, and change the terrain of the maps you play on.</p>
+	<p>It is 100% compatabile with other Wesnoth maps and scenarios. You are able to play it with any existing Wesnoth map you choose. It comes with some specially designed maps, or you could even create your own!</p>
+	<p>The addon is currently only available for Wesnoth 1.9.x. It is the spiritual successor of the popular "Gambit's Empire Builder" addon.
+
+	<div class="subtitlebar">Guide</div>
+	<p>GambCiv can be very confusing. It's very different from standard Wesnoth gameplay. You should practice offline in a match where you control all the sides.</p>
+	<p>The basic rules are as follows:
+	  <ul>
+	    <li>You can right-click and build anywhere within three hexes of one of your peasants.</li>
+	    <li>As long as that space also has a nearby community.</li>
+	    <li>You get "community" by having your leader on a keep within seven hexes.</li>
+	    <li>You also get "community" in the fifteen hexes around any huts you own.</li>
+	    <li>You cannot build right next to an enemy hut.</li>
+	    <li>You can only perform so many actions per turn. Each one costs an "action point"</li>
+	    <li>You can get more "action points" each turn by building more huts.</li>
+	  </ul>
+	</p>
+	<p>Protips:
+	  <ul>
+	    <li>Harvesting crops or mushrooms doesn't cost you any action points.</li>
+	    <li>You can check your resources by right clicking your leader.</li>
+	    <li>Your resources are also displayed at the top of every build menu.</li>
+	    <li>You should plant four wheat on turn two. That way you're guaranteed to get a hut on turn three.</li>
+	  </ul>
+	</p>
+      </div>
+      <cal include="sidebar">
+<cal include="closing">

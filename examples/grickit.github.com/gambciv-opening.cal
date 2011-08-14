@@ -5,7 +5,7 @@
     <META HTTP-EQUIV="Expires" CONTENT="-1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>
-      <cal print="me.title">
+      <cal print="parent.title">
     </title>
     <script type="text/javascript" src="../scripts/analytics.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">

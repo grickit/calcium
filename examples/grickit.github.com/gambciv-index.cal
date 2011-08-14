@@ -2,7 +2,7 @@
 <cal title="GambCiv">
 
 <cal include="gambciv-opening">
-<cal include="gambciv-global_header">
+<cal include="gambciv-globalheader">
       <div id="header" class="container">GambCiv</div>
       <div id="main">
 	<div class="subtitlebar">About</div>

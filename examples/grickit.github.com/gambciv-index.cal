@@ -2,8 +2,8 @@
 <cal location="gambciv/index.html">
 <cal title="GambCiv">
 
-<cal include="opening">
-<cal include="global_header">
+<cal include="gambciv-opening">
+<cal include="gambciv-global_header">
       <div id="header" class="container">GambCiv</div>
       <div id="main">
 	<div class="subtitlebar">About</div>
@@ -34,5 +34,5 @@
 	  </ul>
 	</p>
       </div>
-      <cal include="sidebar">
-<cal include="closing">
+      <cal include="gambciv-sidebar">
+<cal include="gambciv-closing">

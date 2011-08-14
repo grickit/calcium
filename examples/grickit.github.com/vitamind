@@ -1,7 +1,7 @@
 dir gambciv
-load gambciv-opening.cal
-load gambciv-globalheader.cal
-load gambciv-sidebar.cal
-load gambciv-closing.cal
-load gambciv-index.cal
+load gambciv-opening
+load gambciv-globalheader
+load gambciv-sidebar
+load gambciv-closing
+load gambciv-index
 compile

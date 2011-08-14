@@ -48,7 +48,7 @@ sub dirCommand {
 }
 
 sub loadCommand {
-  $documents->{$_[0]} = caldoc->new($guideFileDirectory.$_[0]);
+  $documents->{$_[0]} = caldoc->precompile($guideFileDirectory.$_[0]);
 }
 
 foreach my $current_line (split(/[\r\n]+/,$guideFile)) {
